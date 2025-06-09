@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu | Saffron Grill House</title>
+  <link rel="icon" href="dark-stroke-fill.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #26100b;
+      color: #fff;
+      margin: 0;
+      padding: 0 20px;
+    }
+    h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 4rem;
+      text-align: center;
+      color: #fffefb;
+      margin-top: 10px;
+    }
+    h2 {
+      color: #e2d850;
+      text-align: center;
+    }
+    .section {
+      margin: 60px 0;
+    }
+    .two-column {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: center;
+    }
+    .menu-list {
+        flex: 2;
+        min-width: 300px; 
+    }
+    .menu-images {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        margin-top: 40px;
+        min-width: 300px; /* Prevent the images from getting too narrow */
+        align-items: center; 
+    }
+    .menu-images img {
+        width: 100%; /* Changed from 70% to fill available width */
+        max-width: 400px; /* Prevent images from getting too large */
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    @media (max-width: 768px) {
+        .two-column {
+          flex-direction: column;
+        }
+        
+        .menu-images {
+          flex-direction: row; /* Change to row for smaller screens */
+          flex-wrap: wrap; /* Allow images to wrap */
+          justify-content: center; /* Center images */
+          margin-top: 20px;
+        }
+        
+        .menu-images img {
+          width: calc(50% - 20px); /* Two images per row with gap */
+          max-width: none;
+        }
+    }
+
+    /* For very small screens */
+    @media (max-width: 480px) {
+      .menu-images img {
+        width: 100%; /* One image per row on very small screens */
+      }
+    }
+
+    .menu-item {
+      margin: 15px 0;
+      padding: 15px;
+      background-color: #4a3b21;
+      border-radius: 10px;
+    }
+    .menu-title {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .menu-description {
+      margin-top: 5px;
+      color: #ccc;
+    }
+    .menu-nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .menu-nav a {
+      padding: 10px 16px;
+      background-color: #e49321;
+      color: #3b2e17;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.3s ease;
+    }
+    .menu-nav a:hover {
+      background-color: #675d28;
+    }
+    .back-home {
+      display: inline-block;
+      margin: 20px 0;
+      background-color: #a8a593;
+      color: #000;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" class="back-home">⬅️ Back to Home</a>
+  <a href="tel:+12624126081"
+   style="position: fixed; top: 20px; right: 20px; background-color: #c4eb62; color: #010000; padding: 10px 18px; border-radius: 8px; font-weight: bold; text-decoration: none; z-index: 1000; box-shadow: 0 4px 12px rgba(0,0,0,0.3);">
+  📞 Order Now
+</a>
+
+
+  <h1>Our Menu</h1>
+  <nav class="menu-nav">
+    <a href="#appetizers">Appetizers</a>
+    <a href="#grill">Grilled</a>
+    <a href="#parathas">Parathas</a>
+    <a href="#veg">Vegetarian</a>
+    <a href="#nonveg">Non-Vegetarian</a>
+    <a href="#biryani">Biryani</a>
+    <a href="#burgers">Burgers</a>
+    <a href="#desserts">Desserts</a>
+    <a href="#drinks">Beverages</a>
+    <a href="#extras">Extras</a>
+  </nav>
+
+  <!-- Sections will be inserted here based on full menu -->
+  <!-- Let me know when you want each section added -->
+   <!-- 🥟 Appetizers -->
+  <section id="appetizers" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Appetizers</h2>
+      <div class="menu-item"><div class="menu-title"><span>Samosa (2 pcs)</span><span>$3.99</span></div><div class="menu-description">Crisp, golden pastries stuffed with spiced potatoes and peas.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Samosa Chaat</span><span>$6.99</span></div><div class="menu-description">Crushed samosa topped with chickpeas, yogurt, chutneys & sev.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Paneer Pakora</span><span>$8.99</span></div><div class="menu-description">Soft paneer cubes deep-fried in seasoned gram flour batter.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chilli Paneer</span><span>$12.99</span></div><div class="menu-description">Spicy Indo-Chinese stir-fry with paneer and bell peppers.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chicken 65</span><span>$13.99</span></div><div class="menu-description">South Indian fried chicken with chili, curry leaves, and bold spices.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chilli Chicken</span><span>$13.99</span></div><div class="menu-description">Crispy chicken tossed in tangy garlic-soy sauce with peppers.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chicken Wings (Boneless) (4 pcs)</span><span>$5.99</span></div><div class="menu-description">Choice of classic buffalo, tangy BBQ, Mango habanero.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chicken Wings (Bone-in) (4 pcs)</span><span>$5.99</span></div><div class="menu-description">Choice of classic buffalo, tangy BBQ, Mango habanero.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Fried Crispy Shrimp</span><span>$13.99</span></div><div class="menu-description">Golden-fried shrimp with zesty seasoning and creamy dip.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Masala Corn</span><span>$5.99</span></div><div class="menu-description">Warm corn kernels mixed with butter, masala, and lime.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Fish Pakora</span><span>$10.99</span></div><div class="menu-description">Hyderabad-style medium battered fish, deep-fried and sautéed in aromatic seasonings.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Onion Pakora</span><span>$6.99</span></div><div class="menu-description">Thinly sliced onions, deep-fried in a spiced gram flour batter, served hot and crispy.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Gobi Pakora</span><span>$6.99</span></div><div class="menu-description">Crispy fried cauliflower fritters in spiced gram flour batter.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Apollo Fish</span><span>$13.99</span></div><div class="menu-description">South Indian-style spicy fried fish with curry leaves.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/s1.jpg" alt="Appetizer 1">
+      <img src="assets/images/s2.jpg" alt="Appetizer 2">
+      <img src="assets/images/s5.jpg" alt="Appetizer 3">
+      <img src="assets/images/s7.avif" alt="Appetizer 2">
+      
+    </div>
+  </section>
+  
+    <!-- 🔥 Grilled -->
+    <section id="grill" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Grilled Specialties</h2>
+      <div class="menu-item"><div class="menu-title"><span>Paneer Tikka</span><span>$14.99</span></div><div class="menu-description">Paneer marinated in yogurt and spices, cooked in tandoor.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chicken Tandoori(Half)</span><span>$12.99-$22.99</span></div><div class="menu-description">Minced chicken skewers spiced and grilled in clay oven.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chicken Malai Tikka</span><span>$13.99</span></div><div class="menu-description">Seasoned chicken breast grilled to juicy perfection.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Mixed Grill Plater</span><span>$24.99</span></div><div class="menu-description">Chef Special Grill plater.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Beef Seek Kebab</span><span>$15.99</span></div><div class="menu-description">Tender Beef chops marinated overnight in spices and flame grilled.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Beef Bihari Boti</span><span>$17.99</span></div><div class="menu-description">Spiced jumbo Beef grilled to perfection.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/G11.jpg" alt="Chicken Tikka">
+      <img src="assets/images/g22.avif" alt="Kebab">
+      <img src="assets/images/g33.jpg" alt="Grilled Paneer">
+    </div>
+  </section>
+
+  <!-- 🍞 Breads -->
+<section id="breads" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Breads</h2>
+      <div class="menu-item"><div class="menu-title"><span>Plain Naan</span><span>$1.99</span></div><div class="menu-description">Soft tandoori-baked flatbread.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Butter Naan</span><span>$2.99</span></div><div class="menu-description">Naan brushed with butter for extra richness.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Garlic Naan</span><span>$3.99</span></div><div class="menu-description">Fluffy naan topped with minced garlic and herbs.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Cheese Naan</span><span>$3.99</span></div><div class="menu-description">Stuffed with melty cheese and baked to perfection.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/b1.avif" alt="Bread 1">
+      <img src="assets/images/b3.jpg" alt="Bread 2">
+    </div>
+  </section>
+
+  <!-- 🫓 Parathas -->
+  <section id="parathas" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Parathas</h2>
+      <div class="menu-item"><div class="menu-title"><span>Aloo Paratha</span><span>$5.99</span></div><div class="menu-description">Flatbread stuffed with spicy mashed potatoes.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Paneer Paratha</span><span>$5.99</span></div><div class="menu-description">Flatbread with seasoned paneer filling.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Cheese Paratha</span><span>$5.99</span></div><div class="menu-description">Flatbread stuffed with melty cheese.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Gobi Paratha</span><span>$5.99</span></div><div class="menu-description">Flatbread filled with spiced cauliflower mash.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Plain Paratha</span><span>$4.99</span></div><div class="menu-description">Flatbread pan fried with ghee and oil.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/p1.jpg" alt="Paratha 1">
+      <img src="assets/images/p2.jpg" alt="Paratha 2">
+    </div>
+  </section>
+
+  <!-- 🥬 Vegetarian -->
+  <section id="veg" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Vegetarian</h2>
+      <div class="menu-item"><div class="menu-title"><span>Palak Paneer</span><span>$14.99</span></div><div class="menu-description">Spinach gravy cooked with cottage cheese cubes.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Shahi Paneer</span><span>$15.99</span></div><div class="menu-description">Rich, creamy tomato-based paneer curry.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Paneer Butter Masala</span><span>$13.99</span></div><div class="menu-description">Paneer cubes simmered in a buttery tomato sauce.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Paneer Tikka Masala</span><span>$15.99</span></div><div class="menu-description">Paneer sautéed with onions, capsicum, and spices in kadai-style gravy.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chana Masala</span><span>$13.99</span></div><div class="menu-description">Chickpeas cooked in tangy tomato curry.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Dal Tadka</span><span>$13.99</span></div><div class="menu-description">Yellow lentils tempered with garlic and spices.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Dal Makhani</span><span>$13.99</span></div><div class="menu-description">Creamy slow-cooked black lentils with butter and cream.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/v1.jpg" alt="Veg Dish 1">
+      <img src="assets/images/v2.jpg" alt="Veg Dish 2">
+    </div>
+  </section>
+<!-- 🍗 Non-Vegetarian -->
+<section id="nonveg" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Non-Vegetarian</h2>
+      <div class="menu-item"><div class="menu-title"><span>Chicken curry</span><span>$15.99</span></div><div class="menu-description">Slow-cooked chicken in creamy spiced sauce.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Beef Karahi</span><span>$18.99</span></div><div class="menu-description">Pakistani-style stir-fried beef curry.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Egg Masala</span><span>$13.99</span></div><div class="menu-description">Traditional Egg curry with rich gravy.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Lamb Curry</span><span>$19.99</span></div><div class="menu-description">Tender Lamb cooked in aromatic masala sauce.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Butter Chicken</span><span>$16.99</span></div><div class="menu-description">Tandoori chicken in buttery tomato-based curry.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Chicken Tikka Masala</span><span>$16.99</span></div><div class="menu-description">Grilled chicken chunks simmered in spiced creamy tomato gravy.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Goat Curry</span><span>$20.99</span></div><div class="menu-description">Bone-in goat meat cooked in a traditional spicy gravy.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Beef Nihari</span><span>$16.99</span></div><div class="menu-description">Slow-cooked beef shank stew with rich, spicy gravy.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/n1.jpg" alt="Non-Veg Dish 1">
+      <img src="assets/images/n2.jpg" alt="Non-Veg Dish 2">
+    </div>
+  </section>
+  <!-- 🍚 Biryani -->
+<section id="biryani" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Biryani</h2>
+      <div class="menu-item"><div class="menu-title"><span>Chicken Biryani</span><span>$17.99</span></div><div class="menu-description">Classic dum-style biryani, cooked with chicken and fragrant spices.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Goat Biryani</span><span>$18.99</span></div><div class="menu-description">Traditional biryani featuring tender goat meat, slow-cooked to perfection.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Veg Biryani</span><span>$14.99</span></div><div class="menu-description">Fragrant rice infused with saffron and mixed vegetables.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Paneer Biryani</span><span>$16.99</span></div><div class="menu-description">Fragrant basmati rice layered with spiced paneer and aromatic herbs.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Shrimp Biryani</span><span>$17.99</span></div><div class="menu-description">Fragrant basmati rice cooked with succulent shrimp, aromatic spices, and herbs, served with raita.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/b11.jpg" alt="Biryani 1">
+      <img src="assets/images/b22.webp" alt="Biryani 2">
+    </div>
+  </section>
+  
+  <!-- 🍔 Fries & Burgers -->
+  <section id="burgers" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Fries & Burgers</h2>
+      <div class="menu-item"><div class="menu-title"><span>Zinger Burger</span><span>$9.99</span></div><div class="menu-description">Crispy, spicy fried chicken sandwich with lettuce, mayo, and cheese.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Zinger Burger (Meal)</span><span>+ $3.99</span></div><div class="menu-description">Upgrade to a meal with fries and drink.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Cheese Burger</span><span>$9.99</span></div><div class="menu-description">Classic beef patty with melted cheese on a toasted bun.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Cheese Burger (Meal)</span><span>+ $3.99</span></div><div class="menu-description">Add fries and drink for a complete meal.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Fried Chicken</span><span>$8.99</span></div><div class="menu-description">Crunchy, golden-fried chicken pieces served with fries.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Mozzarella Sticks</span><span>$7.99</span></div><div class="menu-description">Crispy, gooey cheese sticks, served with marinara sauce.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Cheese Curds</span><span>$10.99</span></div><div class="menu-description">Bite-sized Wisconsin cheese, battered and fried to golden perfection.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Onion Rings</span><span>$3.49</span></div><div class="menu-description">Crispy battered onion rings served with a signature dipping sauce.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>French Fries</span><span>$3.49</span></div><div class="menu-description">Crispy golden French fries, perfectly seasoned and freshly served.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/f1.jpg" alt="Burger Items">
+      <img src="assets/images/f2.jpg" alt="Fried Items">
+    </div>
+  </section>
+  
+  <!-- 🍮 Desserts -->
+  <section id="desserts" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Desserts</h2>
+      <div class="menu-item"><div class="menu-title"><span>Gulab Jamun</span><span>$4.99</span></div><div class="menu-description">Soft milk dumplings soaked in warm, cardamom-infused sugar syrup.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Tres Leches</span><span>$5.99</span></div><div class="menu-description">A rich and moist sponge cake soaked in three types of milk.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Kheer</span><span>$4.99</span></div><div class="menu-description">Creamy, aromatic rice pudding topped with saffron and nuts.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Jalebi</span><span>$5.99</span></div><div class="menu-description">Sweet and creamy jalebi served with warm milk for a delightful indulgence.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/d1.jpg" alt="Desserts">
+    </div>
+  </section>
+  
+  <!-- 🥤 Beverages -->
+  <section id="drinks" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Beverages</h2>
+      <div class="menu-item"><div class="menu-title"><span>Karachi Tea</span><span>$2.99</span></div><div class="menu-description">Strong, aromatic Pakistani-style tea brewed with milk and spices.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Mango Lassi</span><span>$5.99</span></div><div class="menu-description">Smooth yogurt-based mango drink, sweet and refreshing.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Fountain Drinks</span><span>$2.49</span></div><div class="menu-description">Classic sodas and refreshments.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Lime Soda</span><span>$4.99</span></div><div class="menu-description">Sparkling lime-infused soda for a zesty kick.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Karachi Masala Soda</span><span>$5.99</span></div><div class="menu-description">A refreshing and tangy spiced soda with a zesty blend of masala, perfect for a flavorful kick.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/b12.jpg" alt="Drinks">
+    </div>
+  </section>
+  <!-- 🍽️ Extras -->
+<section id="extras" class="section two-column">
+    <div class="menu-list">
+      <h2 class="section-title">Extras</h2>
+      <div class="menu-item"><div class="menu-title"><span>Rice</span><span>$3.99</span></div><div class="menu-description">Steamed basmati rice.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Yogurt</span><span>$1.99</span></div><div class="menu-description">Freshly prepared cool yogurt.</div></div>
+      <div class="menu-item"><div class="menu-title"><span>Mint Chutney</span><span>$1.99</span></div><div class="menu-description">Refreshing mint-coriander dip.</div></div>
+    </div>
+    <div class="menu-images">
+      <img src="assets/images/e1.jpg" alt="Extras">
+    </div>
+  </section>
+
+</body>
+</html>
